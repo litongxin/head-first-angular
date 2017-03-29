@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Hero} from './hero';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Tour of  The Avengers';
+  heroes = [
+    new Hero (1, 'Capital American'),
+    new Hero (2, 'Iron Man'),
+    new Hero(3, 'Black Widow')
+  ];
+  myHero = this.heroes[0];
 }
